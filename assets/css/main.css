@@ -291,5 +291,28 @@ marquee{
 
 .footer-content{
     padding-bottom: 20px;
+    padding-top: 10px;
     color: #878EA8;
+}
+
+.footer{
+    color: #878EA8;
+}
+
+.footer-content a:not(:last-child) {
+    border-right: 1px solid #878EA8;
+    padding-right: 10px;
+}
+
+.footer-swiper{
+    margin-bottom: 20px;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer-swiper img{
+    height: 40px;
+    width: auto;
 }

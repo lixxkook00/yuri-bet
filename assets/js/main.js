@@ -61,24 +61,19 @@ var swiper = new Swiper(".swiper-l-banner", {
     },
     loop: true,
     loopedSlides: 50,
-    // speed: 1000,
-    // // initialSlide: 1,
-    // grabCursor: true,
-    // // navigation: {
-    // //     nextEl: ".swiper-new-roadmap-next",
-    // //     prevEl: ".swiper-new-roadmap-prev",
-    // // },
-    // breakpoints: {
-    //     // when window width is >= 480px
-    //     120: {
-    //         slidesPerView: 1,
-    //         spaceBetween: 20
-    //     },
-    //     // when window width is >= 640px
-    //    // when window width is >= 640px
-    //     740: {
-    //         slidesPerView: 1,
-    //         spaceBetween: 30
-    //     }
-    // },
+});
+
+
+var swiper = new Swiper(".swiper-footer", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 0,
+    // effect: 'fade',
+    // auto
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    loopedSlides: 50,
 });

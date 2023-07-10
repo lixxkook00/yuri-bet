@@ -494,6 +494,8 @@ a:hover {
 }
 
 .primary-button:hover {
+  cursor: pointer;
+  transform: scale(0.98);
   /* cursor: pointer;
   letter-spacing: 1px;
   background-image: linear-gradient(45deg, #5FA6F8 0%, #22BFC6 33%, #00CDAA 100%); */
