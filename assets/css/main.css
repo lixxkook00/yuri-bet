@@ -1,0 +1,290 @@
+/* HEADER */
+.header {
+    width: 100vw;
+    background-size: cover;
+    z-index: 2;
+    border-bottom: 2px solid #CEDBFF;
+    background: linear-gradient(180deg, #FFFFFF 0%, #E6EDFF 78.54%, #FCFCFE 94.38%);
+}
+
+.header-wrapper {
+    /* padding: 10px 5vw; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+}
+
+.header-logo {
+    width: 180px;
+    height: auto;
+}
+
+.header-nav-item {
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0 20px;
+    font-family: 'Roboto';
+    min-width: 80px;
+    letter-spacing: 2px;
+    height: 100%;
+    position: relative;
+    font-weight: 400;
+}
+
+.header-nav-item.active,
+.header-nav-item:hover {
+    cursor: pointer;
+    user-select: none;
+    color: #484CFE;
+}
+
+.header-logo {
+    padding: 5px 0;
+}
+
+.header-nav {
+    height: 100%;
+}
+
+.header-nav-item.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -21px;
+    
+    height: 2px;
+    width: 100%;
+    background-color: #484CFE;
+}
+
+.content{
+    background: url(/assets/images/main-bg.png) no-repeat top center;
+    background-size: 100% auto;
+    background-color: #fff;
+}
+
+.noti-wrapper{
+    padding: 5px 15px;
+    color: #000;
+}
+
+.noti-icon{
+    padding-right: 10px;
+}
+
+marquee{
+    color: #000;
+}
+
+.primary-title{
+    margin: 40px 0;
+}
+
+.primary-title-sub{
+    margin-top: 15px;
+}
+
+.match{
+    background: url(/assets/images/card-bg.png) no-repeat top center;
+    background-size: 100% 100%;
+
+    padding: 40px;
+    padding-top: 18px;
+}
+
+.match-leauge{
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.match-bet{
+    margin: 20px 0;
+}
+
+.match-box{
+    padding: 5px;
+    border-radius:  5px;
+    background-color: #fff;
+    width: 28%;
+
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.match-sub{
+    font-size: 12px;
+}
+
+.match-number{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.match-team-name{
+    margin-top: 3px;
+    min-height: 48px;
+}
+
+.match-vs{
+    margin-top: 40px;
+}
+
+.match-number.small{
+    color: #CF4848;
+}
+
+.match-number.big {
+    color: #48CF65;
+}
+
+.match-team{
+    width: 35%;
+}
+
+.match-team-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.match-team-logo img{
+    width: 50px;
+}
+
+.match-infor{
+    margin-top: 20px;
+}
+
+.see-all{
+    margin-top: 30px;
+}
+
+.see-all-text{
+    margin-top: 10px;
+}
+
+.service{
+    margin-top: 40px;
+}
+
+.service-item{
+    transition: all 0.5s;
+}
+
+.service-item:hover{
+    transform: scale(0.98);
+}
+
+.service-item img{
+    width: 100%;
+}
+
+.download-img{
+    position: relative;
+    margin-top: 10%;
+}
+
+.download-img img{
+    width: 100%;
+    height: auto;
+}
+
+.download-phone{
+    position: absolute;
+}
+
+.download-phone img{
+    width: 100%;
+}
+
+.download-logo img{
+    width: 300px;
+}
+
+.download-text{
+    margin: 40px 0;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.partner{
+    margin: 40px 0;
+}
+
+.contact {
+    background: linear-gradient(98.66deg, #375FFF 0%, #8097FF 100%);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.contact-img img{
+    width: 200px;
+    transform: scale(1.35) translateX(40%);
+}
+
+
+.contact-form-title{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-form{
+    padding: 0 20px;
+}
+
+.contact-form-input{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #484CFE;
+}
+
+.contact-form-input input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.footer {
+    background-color: #434957;
+    padding-top: 30px;
+}
+
+.footer-line {
+    height: 2px;
+    width: 100%;
+    background-color: #878EA8;
+    margin: 30px 0;
+}
+
+.footer-logo{
+    margin-bottom: 20px;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+}
+
+.footer img{
+    max-width: 100%;
+}
+
+.see-all-icon{
+    transition: all 0.4s ease-in-out;
+    animation: up-and-down 1s infinite alternate ease-in-out;
+}
+
+@keyframes up-and-down {
+    100%{
+        transform: translateY(10px);
+    }
+}

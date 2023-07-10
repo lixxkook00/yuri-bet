@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/icon.png">
+    <title>Yuri</title>
+
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/utils.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- meta -->
+    <meta name="title" content="Yuri" />
+    <meta name="author" content="Yuri" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Yuri">
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Yuri" />
+    <meta property="og:image" content="./assets/images/logo-large.png">
+    <meta property="og:description" content="Yuri">
+
+    <!-- <meta property="og:image" content="./assets/images/ic-website.png" /> -->
+</head>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <img class="header-mobile-logo" src="./assets/images/logo-small.png" alt="">
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#home">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#games">
+                    <i class="fa-solid fa-dice"></i> Games
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#service">
+                    <i class="fa-brands fa-servicestack"></i> Service
+                </a>
+            </li>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#contact">
+                    <i class="fa-solid fa-phone-volume"></i> Contact Us
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#partner">
+                    <i class="fa-solid fa-people-group"></i> Partnership
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-user-plus"></i> Sign up
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header hidden-m-t">
+        <div class="container">
+            <div class="header-wrapper align-items-center d-flex justify-content-between">
+                <a class="header-logo" href="/">
+                    <img src="./assets/images/logo-small.png" alt="" class="header-logo">
+                </a>
+
+                <div class="header-nav d-flex">
+                    <a href="#home" class="header-nav-item centering active">
+                        Home
+                    </a>
+                    <a href="#games" class="header-nav-item centering">
+                        Games
+                    </a>
+                    <a href="#service" class="header-nav-item centering">
+                        Service
+                    </a>
+                    <a href="#contact" class="header-nav-item centering">
+                        Contact Us
+                    </a>
+                    <a href="#partner" class="header-nav-item centering">
+                        Partnership
+                    </a>
+                </div>
+
+                <div class="header-nav d-flex">
+                    <a href="#" class="primary-button second">
+                        Sign up
+                    </a>
+                    <a href="#" class="primary-button">
+                        Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- LARGE BANNER -->
+    <div id="home" class="l-banner">
+        <div class="swiper swiper-l-banner h-100">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/assets/images/banner.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/banner.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/assets/images/banner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="container">
+            <!-- NOTIFICATION -->
+            <section class="noti">
+                <div class="noti-wrapper primary-button second d-flex align-items-center">
+                    <div class="noti-icon">
+                        <img src="/assets/images/volumn.png" alt="">
+                    </div>
+                    <div class="noti-content centering">
+                        <marquee>
+                            Today ***vak89*** has won an iPhone 14
+                            Promax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Today ***vak89*** has won
+                            an iPhone 14 Promax&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Today ***vak89*** has won an iPhone 14 Promax
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </marquee>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TODAY MATCH -->
+            <section id="games" class="today-match">
+                <div class="centering">
+                    <div class="primary-title d-flex align-items-center">
+                        <div class="primary-title-border">
+                            <img src="/assets/images/titile-left.png" alt="">
+                        </div>
+                        <div class="primary-title-content d-flex align-items-center justify-content-center flex-column">
+                            <div class="primary-title-text">
+                                <img src="/assets/images/txt-today-match.png" alt="">
+                            </div>
+                            <div class="primary-title-sub">
+                                All the matches in one place on TestBet
+                            </div>
+                        </div>
+                        <div class="primary-title-border">
+                            <img src="/assets/images/titile-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-3 grid-m-1">
+                    <div class="match wow animate__fadeInLeft" data-wow-duration="0.5s">
+                        <div class="match-leauge text-center">
+                            English Premier League
+                        </div>
+                        <div class="match-infor d-flex align-items-start justify-content-between">
+                            <div class="match-team">
+                                <div class="match-team-logo">
+                                    <img src="/assets/images/clb-1.png" alt="">
+                                </div>
+                                <div class="match-team-name text-center">
+                                    Everton
+                                </div>
+                            </div>
+                            <div class="match-vs">
+                                <img src="/assets/images/vs.png" alt="">
+                            </div>
+                            <div class="match-team">
+                                <div class="match-team-logo">
+                                    <img src="/assets/images/clb-2.png" alt="">
+                                </div>
+                                <div class="match-team-name text-center">
+                                    Tottenham <br>
+                                    Hotspur
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-bet d-flex align-items-center justify-content-between">
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Odds
+                                </div>
+                                <div class="match-number odds">
+                                    1.97
+                                </div>
+                            </div>
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Small
+                                </div>
+                                <div class="match-number small">
+                                    4.39
+                                </div>
+                            </div>
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Big
+                                </div>
+                                <div class="match-number big">
+                                    0.82
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary-button w-100">
+                            Bet now
+                        </div>
+                    </div>
+
+                    <div class="match wow animate__fadeInUp" data-wow-duration="0.5s">
+                        <div class="match-leauge text-center">
+                            English Premier League
+                        </div>
+                        <div class="match-infor d-flex align-items-start justify-content-between">
+                            <div class="match-team">
+                                <div class="match-team-logo">
+                                    <img src="/assets/images/clb-3.png" alt="">
+                                </div>
+                                <div class="match-team-name text-center">
+                                    Chelsea
+                                </div>
+                            </div>
+                            <div class="match-vs">
+                                <img src="/assets/images/vs.png" alt="">
+                            </div>
+                            <div class="match-team">
+                                <div class="match-team-logo">
+                                    <img src="/assets/images/clb-4.png" alt="">
+                                </div>
+                                <div class="match-team-name text-center">
+                                    Arsenal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-bet d-flex align-items-center justify-content-between">
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Odds
+                                </div>
+                                <div class="match-number odds">
+                                    1.97
+                                </div>
+                            </div>
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Small
+                                </div>
+                                <div class="match-number small">
+                                    4.39
+                                </div>
+                            </div>
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Big
+                                </div>
+                                <div class="match-number big">
+                                    0.82
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary-button w-100">
+                            Bet now
+                        </div>
+                    </div>
+
+                    <div class="match wow animate__fadeInRight" data-wow-duration="0.5s">
+                        <div class="match-leauge text-center">
+                            English Premier League
+                        </div>
+                        <div class="match-infor d-flex align-items-start justify-content-between">
+                            <div class="match-team">
+                                <div class="match-team-logo">
+                                    <img src="/assets/images/clb-5.png" alt="">
+                                </div>
+                                <div class="match-team-name text-center">
+                                    Paris <br>
+                                    Saint-Germain
+                                </div>
+                            </div>
+                            <div class="match-vs">
+                                <img src="/assets/images/vs.png" alt="">
+                            </div>
+                            <div class="match-team">
+                                <div class="match-team-logo">
+                                    <img src="/assets/images/clb-6.png" alt="">
+                                </div>
+                                <div class="match-team-name text-center">
+                                    Portugal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-bet d-flex align-items-center justify-content-between">
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Odds
+                                </div>
+                                <div class="match-number odds">
+                                    1.97
+                                </div>
+                            </div>
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Small
+                                </div>
+                                <div class="match-number small">
+                                    4.39
+                                </div>
+                            </div>
+                            <div class="match-box">
+                                <div class="match-sub">
+                                    Big
+                                </div>
+                                <div class="match-number big">
+                                    0.82
+                                </div>
+                            </div>
+                        </div>
+                        <div class="primary-button w-100">
+                            Bet now
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centering">
+                    <div class="see-all d-flex align-items-center justify-content-center flex-column">
+                        <div class="see-all-icon">
+                            <img src="/assets/images/double-arrow-down.png" alt="">
+                        </div>
+                        <div class="see-all-text">
+                            See all matches
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICE -->
+            <section id="service" class="service">
+                <div class="centering">
+                    <div class="primary-title d-flex align-items-center">
+                        <div class="primary-title-border">
+                            <img src="/assets/images/titile-left.png" alt="">
+                        </div>
+                        <div class="primary-title-content d-flex align-items-center justify-content-center flex-column">
+                            <div class="primary-title-text">
+                                <img src="/assets/images/txt-all-service.png" alt="">
+                            </div>
+                            <div class="primary-title-sub">
+                                Provide the best service in the market
+                            </div>
+                        </div>
+                        <div class="primary-title-border">
+                            <img src="/assets/images/titile-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-3 grid-m-2 gap-30">
+                    <a href="" class="service-item wow animate__fadeInLeft" data-wow-duration="0.5s">
+                        <img src="/assets/images/service.png" alt="">
+                    </a>
+                    <a href="" class="service-item wow animate__fadeInUp" data-wow-duration="0.5s">
+                        <img src="/assets/images/service-1.png" alt="">
+                    </a>
+                    <a href="" class="service-item wow animate__fadeInRight" data-wow-duration="0.5s">
+                        <img src="/assets/images/service-2.png" alt="">
+                    </a>
+                    <a href="" class="service-item wow animate__fadeInLeft" data-wow-duration="0.5s">
+                        <img src="/assets/images/service-3.png" alt="">
+                    </a>
+                    <a href="" class="service-item wow animate__fadeInUp" data-wow-duration="0.5s">
+                        <img src="/assets/images/service-4.png" alt="">
+                    </a>
+                    <a href="" class="service-item wow animate__fadeInRight" data-wow-duration="0.5s">
+                        <img src="/assets/images/service-5.png" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!-- DOWNLOAD -->
+            <section class="download">
+                <div class="centering">
+                    <div class="primary-title d-flex align-items-center">
+                        <div class="primary-title-border">
+                            <img src="/assets/images/titile-left.png" alt="">
+                        </div>
+                        <div class="primary-title-content d-flex align-items-center justify-content-center flex-column">
+                            <div class="primary-title-text">
+                                <img src="/assets/images/txt-app-download.png" alt="">
+                            </div>
+                            <div class="primary-title-sub">
+                                Download now to enjoy our games
+                            </div>
+                        </div>
+                        <div class="primary-title-border">
+                            <img src="/assets/images/titile-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-2-1 grid-m-1">
+                    <div class="download-img wow animate__fadeInUp" data-wow-duration="0.5s">
+                        <img class="w-100" src="/assets/images/stand-full.png" alt="">
+                    </div>
+
+                    <div class="download-content centering align-items-end flex-column wow animate__fadeInUp"
+                        data-wow-duration="0.5s">
+                        <div class="download-logo">
+                            <img src="/assets/images/logo-large.png" alt="">
+                        </div>
+                        <div class="download-text text-right">
+                            Download now the TestBet application for your <br>
+                            phone for a better and safer game experience, <br>
+                            the application supports all products: Sports, <br>
+                            E-Sports, Casino, Games and Lottery.
+                        </div>
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="">
+                                <img src="/assets/images/android.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/assets/images/ios.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PARTNER -->
+            <section id="partner" class="partner">
+                <div class="centering">
+                    <div class="primary-title d-flex align-items-center">
+                        <div class="primary-title-border">
+                            <img src="/assets/images/titile-left.png" alt="">
+                        </div>
+                        <div class="primary-title-content d-flex align-items-center justify-content-center flex-column">
+                            <div class="primary-title-text">
+                                <img src="/assets/images/txt-partner.png" alt="">
+                            </div>
+                            <div class="primary-title-sub">
+                                Become one of our partners today
+                            </div>
+                        </div>
+                        <div class="primary-title-border">
+                            <img src="/assets/images/titile-right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-5 grid-m-2 wow animate__fadeInUp" data-wow-duration="0.5s">
+                    <div class="partner-img centering">
+                        <img src="/assets/images/logo-sponsor-5.png" alt="">
+                    </div>
+                    <div class="partner-img centering">
+                        <img src="/assets/images/logo-sponsor-6.png" alt="">
+                    </div>
+                    <div class="partner-img centering">
+                        <img src="/assets/images/logo-sponsor-7.png" alt="">
+                    </div>
+                    <div class="partner-img centering">
+                        <img src="/assets/images/logo-sponsor-8.png" alt="">
+                    </div>
+                    <div class="partner-img centering">
+                        <img src="/assets/images/logo-sponsor-9.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="contact wow animate__bounceInUp" data-wow-duration="0.5s">
+                <div class="grid grid-2-1 grid-m-1">
+                    <div class="contact-form">
+                        <div class="contact-form-title text-center">
+                            Submit your contact to receive bonus from TestBet
+                        </div>
+                        <div class="grid grid-2 grid-m-1">
+                            <div class="contact-form-input">
+                                <i class="fa-regular fa-user"></i>
+                                <input placeholder="Your name" type="text">
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input placeholder="Email" type="text">
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-phone"></i>
+                                <input placeholder="Phone Number" type="text">
+                            </div>
+                            <a href="#" class="primary-button orange">
+                                Submit contact
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-img">
+                        <img src="/assets/images/footer-form.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="centering">
+                <div class="footer-logo">
+                    <img src="/assets/images/logo-gray.png" alt="">
+                </div>
+            </div>
+
+            <!-- <div class="footer-line"></div> -->
+
+            <div class="centering">
+                <div class="footer-img">
+                    <img src="/assets/images/footer.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOADING -->
+    <div id="loading" class="loading centering">
+        <div class="loadingio-spinner-eclipse-2wq14xvvzww">
+            <div class="ldio-7p9hfcd676n">
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/main.js"></script>
+
+<script>
+    /*  
+           INIT WOWJS
+        */
+    wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 30, // default
+        mobile: true, // default
+        live: true, // default
+    });
+    wow.init();
+</script>

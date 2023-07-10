@@ -1,0 +1,44 @@
+/* Group 13 */
+
+position: absolute;
+width: 350px;
+height: 60px;
+left: 769px;
+top: 3447px;
+
+
+
+/* Rectangle 39 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 350px;
+height: 60px;
+left: 769px;
+top: 3447px;
+
+background: linear-gradient(180deg, #FFD17C 0%, #FF7A00 75.52%, #FFBE2F 100%);
+border: 2px solid #FCC434;
+border-radius: 30px;
+
+
+/* Submit contact */
+
+position: absolute;
+left: 45.47%;
+right: 46.98%;
+top: 86.12%;
+bottom: 13.18%;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 28px;
+/* identical to box height */
+text-align: center;
+
+/* pure white */
+color: #FFFFFF;
+
