@@ -83,11 +83,18 @@ marquee{
 }
 
 .match{
+    cursor: pointer;
     background: url(/assets/images/card-bg.png) no-repeat top center;
     background-size: 100% 100%;
 
     padding: 40px;
     padding-top: 18px;
+
+    transition: all 0.5s linear;
+}
+
+.match:hover{
+    transform: scale(1.03);
 }
 
 .match-leauge{
@@ -315,4 +322,21 @@ marquee{
 .footer-swiper img{
     height: 40px;
     width: auto;
+}
+
+.download-icon:hover{
+    transition: all 0.4s linear;
+    transform: scale(1.02);
+}
+
+.see-all-text:hover {
+    font-weight: 500;
+    cursor: pointer;
+    color: #3F64FF;
+}
+
+.noti-wrapper{
+    cursor: pointer;
+    background: linear-gradient(180deg, #F7F8FF 0%, #DBE2FF 75.52%, #FFFFFF 100%);
+    border-radius: 15px;
 }
