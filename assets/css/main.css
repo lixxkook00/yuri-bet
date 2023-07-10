@@ -94,7 +94,7 @@ marquee{
 }
 
 .match:hover{
-    transform: scale(1.03);
+    transform: scale(1.015);
 }
 
 .match-leauge{
@@ -182,7 +182,7 @@ marquee{
 }
 
 .service-item:hover{
-    transform: scale(0.98);
+    transform: scale(1.03);
 }
 
 .service-item img{
@@ -339,4 +339,14 @@ marquee{
     cursor: pointer;
     background: linear-gradient(180deg, #F7F8FF 0%, #DBE2FF 75.52%, #FFFFFF 100%);
     border-radius: 15px;
+}
+
+.match .primary-button.later {
+    background: linear-gradient(180deg, #F7F8FF 0%, #DBE2FF 75.52%, #FFFFFF 100%);
+    color: #708BFF;
+}
+
+.match .primary-button.later:hover {
+    background: linear-gradient(180deg, #B0BFFF 0%, #3D62FF 77.6%, #9AAEFF 100%);
+    color: #fff;
 }
