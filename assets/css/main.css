@@ -288,3 +288,8 @@ marquee{
         transform: translateY(10px);
     }
 }
+
+.footer-content{
+    padding-bottom: 20px;
+    color: #878EA8;
+}
