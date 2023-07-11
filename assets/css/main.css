@@ -7,11 +7,6 @@
     background: linear-gradient(180deg, #FFFFFF 0%, #E6EDFF 78.54%, #FCFCFE 94.38%);
 }
 
-.header-wrapper {
-    /* padding: 10px 5vw; */
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
-}
-
 .header-logo {
     width: 180px;
     height: auto;

@@ -1,6 +1,7 @@
 const bind1 = document.querySelector.bind(document)
 const bind2 = document.querySelectorAll.bind(document)
 
+// mobile nav handler
 const toggleNavMobile = () => {
     bind1('.soft-menu').classList.toggle('open')
     bind1('.soft-menu__list').classList.toggle('open')
@@ -12,6 +13,8 @@ bind2('.soft-menu__item').forEach((element) => {
   }
 })
 
+
+// scoll to top
 bind1('.scroll-to-top').onclick = () => {
     window.scrollTo({
         top: 0,
@@ -20,7 +23,7 @@ bind1('.scroll-to-top').onclick = () => {
     });
 }
 
-// handle animation number
+// handle animate number
 function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
     let currentNumber = startNumber
     const interval = window.setInterval(updateNumber, 17)
@@ -47,12 +50,11 @@ window.addEventListener('load', (event) => {
 
 });
 
-// SLIDER
+// SLIDERS
 var swiper = new Swiper(".swiper-l-banner", {
     slidesPerView: 1,
     centeredSlides: true,
     spaceBetween: 0,
-    // effect: 'fade',
     // auto
     autoplay: {
         delay: 2000,
@@ -66,7 +68,6 @@ var swiper = new Swiper(".swiper-footer", {
     slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 0,
-    // effect: 'fade',
     // auto
     autoplay: {
         delay: 2000,
@@ -76,6 +77,7 @@ var swiper = new Swiper(".swiper-footer", {
     loopedSlides: 50,
 });
 
+// nav animate
 const activeNav = (elementActive, activeLine, indexActive) => {
     let left = 0
     bind2('.header-nav-item').forEach((element, index) => {
@@ -109,5 +111,8 @@ const navHeaderHandler = () => {
     })
 }
 
+// for the first time when the window have been loaded
 onLeave(bind1('.header-nav-line'))
+
+// active handler
 navHeaderHandler()
