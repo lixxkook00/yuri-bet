@@ -174,7 +174,7 @@ marquee {
 }
 
 .service {
-    /* margin-top: 40px; */
+    margin-bottom: 40px;
 }
 
 .service-item {
@@ -437,5 +437,40 @@ section {
 }
 
 .contact-form-input input {
+    width: 100%;
+}
+
+.input-title{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.step{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.step-text{
+    font-weight: 500;
+}
+
+.step-content{
+    font-weight: 500;
+    font-size: 18px;
+    color: #6E88FF;
+}
+
+.input-li {
+    border-bottom: 1px solid #dddddd84;
+    padding-bottom: 15px;
+}
+
+.input-li+.input-li{
+    padding-top: 10px;
+}
+
+.input-select{
+    border: none;
+    outline: none;
     width: 100%;
 }

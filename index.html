@@ -77,6 +77,20 @@
 
             <div class="soft-menu__item soft-menu__item-sub">
                 <a class="ref-link" href="#" id="testpopup" class="primary-button second" type="button"
+                    data-bs-toggle="modal" data-bs-target="#depositPopUp">
+                    <i class="fa-solid fa-money-check-dollar"></i> Deposit
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#" id="testpopup" class="primary-button second" type="button"
+                    data-bs-toggle="modal" data-bs-target="#withDrawPopUp">
+                    <i class="fa-solid fa-hand-holding-dollar"></i> Withdraw
+                </a>
+            </div>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="#" id="testpopup" class="primary-button second" type="button"
                     data-bs-toggle="modal" data-bs-target="#registerPopUp">
                     <i class="fa-solid fa-user-plus"></i> Sign up
                 </a>
@@ -112,9 +126,9 @@
                     <a href="#contact" class="header-nav-item centering">
                         Contact Us
                     </a>
-                    <a href="#partner" class="header-nav-item centering">
+                    <!-- <a href="#partner" class="header-nav-item centering">
                         Partnership
-                    </a>
+                    </a> -->
                     <div class="header-nav-line"></div>
                 </div>
 
@@ -126,6 +140,14 @@
                     <a href="#" class="primary-button" type="button" data-bs-toggle="modal"
                         data-bs-target="#logInPopUp">
                         Login
+                    </a>
+                    <a href="#" class="primary-button" type="button" data-bs-toggle="modal"
+                        data-bs-target="#withDrawPopUp">
+                        Withdraw
+                    </a>
+                    <a href="#" id="testing" class="primary-button" type="button" data-bs-toggle="modal"
+                        data-bs-target="#depositPopUp">
+                        Deposit
                     </a>
                 </div>
 
@@ -421,7 +443,7 @@
             </section>
 
             <!-- DOWNLOAD -->
-            <section class="download">
+            <!-- <section class="download">
                 <div class="centering">
                     <div class="primary-title d-flex align-items-center">
                         <div class="primary-title-border">
@@ -467,10 +489,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- PARTNER -->
-            <section id="partner" class="partner">
+            <!-- <section id="partner" class="partner">
                 <div class="centering">
                     <div class="primary-title d-flex align-items-center">
                         <div class="primary-title-border">
@@ -507,7 +529,7 @@
                         <img src="/assets/images/logo-sponsor-9.png" alt="">
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- CONTACT -->
             <!-- <section id="contact" class="contact wow animate__bounceInUp" data-wow-duration="0.5s">
@@ -737,6 +759,239 @@
                     <div class="primary-form-buttons">
                         <a href="#" class="primary-button">
                             Login
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Deposit -->
+    <div class="modal fade" id="depositPopUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="primary-form">
+                    <div class="primary-form-header">
+                        <div class="primary-form-header-name gradient-text text-center">
+                            DEPOSIT
+                        </div>
+
+                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-content">
+                        <div class="step d-flex justify-content-between">
+                            <div class="step-text">
+                                <i class="fa-solid fa-caret-right"></i> Step 1
+                            </div>
+                            <div class="step-content">
+                                Deposit to this account
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-title">
+                                Bank Name
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-house"></i>
+                                <input placeholder="User name" type="text" value="Sacombank" disabled>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-title">
+                                Account number
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-hashtag"></i>
+                                <input placeholder="User name" type="text" value="686868686868" disabled>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-title">
+                                Account name
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-signature"></i>
+                                <input placeholder="User name" type="text" value="Brian" disabled>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-title">
+                                Deposit code
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-barcode"></i>
+                                <input placeholder="User name" type="text" value="thisaccountdeposit" disabled>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="step d-flex justify-content-between">
+                            <div class="step-text">
+                                <i class="fa-solid fa-caret-right"></i> Step 2
+                            </div>
+                            <div class="step-content">
+                                Information verification
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-title">
+                                Money transfer code
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-barcode"></i>
+                                <input placeholder="Money transfer code - xxxx" type="text" value="">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-title">
+                                Amount
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-money-bill"></i>
+                                <input placeholder="Amount - x0,000,000 (USD)" type="number" value="">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-buttons">
+                        <a href="#" class="primary-button">
+                            Deposit Now
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- WithDraw -->
+    <div class="modal fade" id="withDrawPopUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="primary-form">
+                    <div class="primary-form-header">
+                        <div class="primary-form-header-name gradient-text text-center">
+                            WITH DRAW
+                        </div>
+
+                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-content">
+                        <div class="input-li d-flex align-items-center justify-content-between">
+                            <div class="input-li-title step-text">
+                                Withdrawal fee
+                            </div>
+                            <div class="input-li-value step-content">
+                                0%
+                            </div>
+                        </div>
+                        <div class="input-li d-flex align-items-center justify-content-between">
+                            <div class="input-li-title step-text">
+                                Time
+                            </div>
+                            <div class="input-li-value step-content">
+                                5 mins
+                            </div>
+                        </div>
+                        <div class="input-li d-flex align-items-center justify-content-between">
+                            <div class="input-li-title step-text">
+                                Minimun Amount
+                            </div>
+                            <div class="input-li-value step-content">
+                                50
+                            </div>
+                        </div>
+                        <div class="input-li d-flex align-items-center justify-content-between">
+                            <div class="input-li-title step-text">
+                                Maximun Amount
+                            </div>
+                            <div class="input-li-value step-content">
+                                690,00
+                            </div>
+                        </div>
+                        <div class="input-group mt-3">
+                            <div class="input-title">
+                                Bank name
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-house"></i>
+                                <select class="input-select">
+                                    <option value="option1">Option 1</option>
+                                    <option value="option2">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+                        <div class="input-group mt-3">
+                            <div class="input-title">
+                                Account number
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-regular fa-user"></i>
+                                <input placeholder="Money transfer code - xxxx" type="text" value="">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+                        <div class="input-group mt-3">
+                            <div class="input-title">
+                                Account name
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-receipt"></i>
+                                <input placeholder="Money transfer code - xxxx" type="text" value="">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-title">
+                                Amount
+                            </div>
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-money-bill"></i>
+                                <input placeholder="Amount - x0,000,000 (USD)" type="number" value="">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-buttons">
+                        <a href="#" class="primary-button">
+                            Withdraw Now
                         </a>
                     </div>
                 </form>

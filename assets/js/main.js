@@ -119,6 +119,8 @@ onLeave(bind1('.header-nav-line'))
 navHeaderHandler()
 
 // popop handler
+// bind1('#testing').click()
+
 bind2('.show-password').forEach(icon => {
     icon.onclick = () => {
         console.log()
