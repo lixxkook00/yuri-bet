@@ -1,44 +1,98 @@
-/* Group 13 */
+/* notification */
 
 position: absolute;
-width: 350px;
-height: 60px;
-left: 769px;
-top: 3447px;
+width: 1320px;
+height: 40px;
+left: 300px;
+top: 680px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 
-
-/* Rectangle 39 */
+/* Rectangle 8 */
 
 box-sizing: border-box;
 
 position: absolute;
-width: 350px;
-height: 60px;
-left: 769px;
-top: 3447px;
+width: 1320px;
+height: 40px;
+left: 300px;
+top: 680px;
 
-background: linear-gradient(180deg, #FFD17C 0%, #FF7A00 75.52%, #FFBE2F 100%);
-border: 2px solid #FCC434;
-border-radius: 30px;
+/* sub_gradient */
+background: linear-gradient(180deg, #F7F8FF 0%, #DBE2FF 75.52%, #FFFFFF 100%);
+border: 2px solid #FFFFFF;
+box-shadow: 0px 4px 4px rgba(126, 150, 255, 0.15);
+border-radius: 20px;
 
 
-/* Submit contact */
+/* Today ***vak89*** has won an iPhone 14 Promax */
 
 position: absolute;
-left: 45.47%;
-right: 46.98%;
-top: 86.12%;
-bottom: 13.18%;
+width: 423px;
+height: 25px;
+left: 364px;
+top: 687px;
 
 font-family: 'PingFang SC';
 font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 28px;
-/* identical to box height */
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
 text-align: center;
 
-/* pure white */
-color: #FFFFFF;
+/* text_dark */
+color: #201E2E;
 
+
+
+/* Today ***vak89*** has won an iPhone 14 Promax */
+
+position: absolute;
+width: 423px;
+height: 25px;
+left: 877px;
+top: 687px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+/* text_dark */
+color: #201E2E;
+
+
+
+/* Today ***vak89*** has */
+
+position: absolute;
+width: 197px;
+height: 25px;
+left: 1390px;
+top: 687px;
+
+font-family: 'PingFang SC';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+
+/* text_dark */
+color: #201E2E;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 82.08%;
+top: 17.16%;
+bottom: 82.34%;
+
+/* main_gradient */
+background: linear-gradient(180deg, #B0BFFF 0%, #3D62FF 77.6%, #9AAEFF 100%);

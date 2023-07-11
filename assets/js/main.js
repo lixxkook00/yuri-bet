@@ -47,7 +47,6 @@ window.addEventListener('load', (event) => {
 
 });
 
-
 // SLIDER
 var swiper = new Swiper(".swiper-l-banner", {
     slidesPerView: 1,
@@ -63,7 +62,6 @@ var swiper = new Swiper(".swiper-l-banner", {
     loopedSlides: 50,
 });
 
-
 var swiper = new Swiper(".swiper-footer", {
     slidesPerView: 3,
     centeredSlides: true,
@@ -77,3 +75,39 @@ var swiper = new Swiper(".swiper-footer", {
     loop: true,
     loopedSlides: 50,
 });
+
+const activeNav = (elementActive, activeLine, indexActive) => {
+    let left = 0
+    bind2('.header-nav-item').forEach((element, index) => {
+        if(index < indexActive){
+            console.log(element.offsetWidth)
+            left = left + element.offsetWidth
+        }
+    })
+
+    activeLine.style.width = `${elementActive.offsetWidth}px`
+    activeLine.style.left = `${left}px`
+}
+
+const onLeave = (activeLine) => {
+    bind2('.header-nav-item').forEach(element => {
+        element.classList.contains('active') && activeNav(element, activeLine)
+    })
+}
+
+const navHeaderHandler = () => {
+    const activeLine = bind1('.header-nav-line');
+
+    bind2('.header-nav-item').forEach((element, index) => {
+        element.addEventListener('mouseover', function() {
+            activeNav(element, activeLine, index)
+        });
+
+        element.addEventListener('mouseout', function() {
+            onLeave(activeLine)
+        });
+    })
+}
+
+onLeave(bind1('.header-nav-line'))
+navHeaderHandler()
