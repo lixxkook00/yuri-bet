@@ -560,7 +560,7 @@ a:hover {
 } */
 
 .gradient-text {
-  background: -webkit-linear-gradient(#014887, #0B70D9);
+  background: -webkit-linear-gradient(180deg, #B0BFFF 0%, #3D62FF 77.6%, #9AAEFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

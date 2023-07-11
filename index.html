@@ -76,13 +76,15 @@
             </div>
 
             <div class="soft-menu__item soft-menu__item-sub">
-                <a class="ref-link" href="">
+                <a class="ref-link" href="#" id="testpopup" class="primary-button second" type="button"
+                    data-bs-toggle="modal" data-bs-target="#registerPopUp">
                     <i class="fa-solid fa-user-plus"></i> Sign up
                 </a>
             </div>
 
             <div class="soft-menu__item soft-menu__item-sub">
-                <a class="ref-link" href="">
+                <a class="ref-link" href="#" class="primary-button" type="button" data-bs-toggle="modal"
+                    data-bs-target="#logInPopUp">
                     <i class="fa-solid fa-right-to-bracket"></i> Login
                 </a>
             </div>
@@ -117,10 +119,12 @@
                 </div>
 
                 <div class="header-nav d-flex">
-                    <a href="#" class="primary-button second">
+                    <a href="#" id="testpopup" class="primary-button second" type="button" data-bs-toggle="modal"
+                        data-bs-target="#registerPopUp">
                         Sign up
                     </a>
-                    <a href="#" class="primary-button">
+                    <a href="#" class="primary-button" type="button" data-bs-toggle="modal"
+                        data-bs-target="#logInPopUp">
                         Login
                     </a>
                 </div>
@@ -538,7 +542,6 @@
         </div>
     </div>
 
-
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
@@ -610,6 +613,135 @@
     <!-- SCROLL TO TOP -->
     <div class="scroll-to-top">
         <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <!-- POPUP -->
+
+    <!-- Register -->
+    <div class="modal fade" id="registerPopUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="primary-form">
+                    <div class="primary-form-header">
+                        <div class="primary-form-header-name gradient-text text-center">
+                            SIGN UP
+                        </div>
+
+                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-content">
+                        <div class="input-group">
+                            <div class="contact-form-input">
+                                <i class="fa-regular fa-user"></i>
+                                <input placeholder="User name" type="text">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-signature"></i>
+                                <input placeholder="Full name" type="text">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-lock"></i>
+                                <input placeholder="Password" type="password">
+                                <div class="show-password"><i class="fa-solid fa-eye"></i></div>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-lock"></i>
+                                <input placeholder="Confirm Password" type="password">
+                                <div class="show-password"><i class="fa-solid fa-eye"></i></div>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-phone"></i>
+                                <input placeholder="Phone" type="number">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-buttons">
+                        <a href="#" class="primary-button">
+                            Sign Up Now
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignIn -->
+    <div class="modal fade" id="logInPopUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="primary-form">
+                    <div class="primary-form-header">
+                        <div class="primary-form-header-name gradient-text text-center">
+                            LOGIN
+                        </div>
+
+                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-content">
+                        <div class="input-group">
+                            <div class="contact-form-input">
+                                <i class="fa-regular fa-user"></i>
+                                <input placeholder="User name" type="text">
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="contact-form-input">
+                                <i class="fa-solid fa-lock"></i>
+                                <input placeholder="Password" type="password">
+                                <div class="show-password"><i class="fa-solid fa-eye"></i></div>
+                            </div>
+                            <div class="error-message">
+                                <!-- Error message -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-buttons">
+                        <a href="#" class="primary-button">
+                            Login
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
 </body>

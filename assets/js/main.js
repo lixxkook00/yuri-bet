@@ -10,6 +10,7 @@ const toggleNavMobile = () => {
 bind2('.soft-menu__item').forEach((element) => {
   element.onclick = () => {
     toggleNavMobile()
+    bind1('.soft-menu').click()
   }
 })
 
@@ -116,3 +117,19 @@ onLeave(bind1('.header-nav-line'))
 
 // active handler
 navHeaderHandler()
+
+// popop handler
+bind2('.show-password').forEach(icon => {
+    icon.onclick = () => {
+        console.log()
+        if(icon.childNodes[0].classList[1] === 'fa-eye'){
+            icon.childNodes[0].classList.remove('fa-eye')
+            icon.childNodes[0].classList.add('fa-eye-slash')
+            icon.parentNode.querySelector('input').type = 'text'
+        }else{
+            icon.childNodes[0].classList.remove('fa-eye-slash')
+            icon.childNodes[0].classList.add('fa-eye')
+            icon.parentNode.querySelector('input').type = 'password'
+        }
+    }
+})

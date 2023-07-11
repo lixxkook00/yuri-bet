@@ -359,3 +359,83 @@ marquee {
 section {
     padding: 40px 0 10px;
 }
+
+.primary-button.later {
+    background: linear-gradient(180deg, #F7F8FF 0%, #DBE2FF 75.52%, #FFFFFF 100%);
+    color: #708BFF;
+}
+
+.primary-button.later:hover {
+    background: linear-gradient(180deg, #B0BFFF 0%, #3D62FF 77.6%, #9AAEFF 100%);
+    color: #fff;
+}
+
+.error-message {
+    font-size: 14px;
+    color: #E61328;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.primary-form {
+    padding: 20px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #E6EDFF 78.54%, #FCFCFE 94.38%);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #708BFF;
+}
+
+.modal-content {
+    border-radius: 25px;
+    border: none;
+}
+
+.primary-form-header-name {
+    font-weight: 600;
+    font-size: 22px;
+    color: #3F64FF;
+}
+
+.contact-form-input {
+    border: 1px solid #3F64FF;
+}
+
+.input-group+.input-group {
+    margin-top: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-form-buttons {
+    margin-top: 20px;
+}
+
+.primary-form-header {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.primary-form-header-close {
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    font-size: 20px;
+    color: #3F64FF;
+    cursor: pointer;
+}
+
+.primary-form-header-close:hover{
+    opacity: 0.8;
+}
+
+.contact-form-input {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form-input input {
+    width: 100%;
+}
