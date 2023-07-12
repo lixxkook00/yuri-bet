@@ -474,3 +474,7 @@ section {
     outline: none;
     width: 100%;
 }
+
+.primary-title-content{
+    padding: 0 20px;
+}
