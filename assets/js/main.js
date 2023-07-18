@@ -73,20 +73,48 @@ var swiper = new Swiper(".swiper-l-banner", {
     loopedSlides: 50,
 });
 
-var swiper = new Swiper(".swiper-footer", {
-    slidesPerView: 6,
+var swiperPromotion = new Swiper(".swiper-promotion", {
+    slidesPerView: 1,
     // Set the index of the active slide to 1
-    activeIndex: 3,
-    // centeredSlides: true,
+    // activeIndex: 3,
+    slideWidth: 200,
+    centeredSlides: true,
     spaceBetween: 0,
     // auto
     autoplay: {
         delay: 4000,
         disableOnInteraction: false,
     },
+    breakpoints: {
+        // when window width is <= 480px
+        480: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        768: {
+            slidesPerView: 6,
+            spaceBetween: 0
+        }
+    },
     loop: true,
     loopedSlides: 50,
 });
+
+bind2('.swiper-promotion .swiper-slide').forEach((element) => {
+    element.onclick = () => {
+        console.log(element.dataset.swiperSlideIndex);
+        swiperPromotion.slideTo(parseInt(element.dataset.swiperSlideIndex) - 1)
+    }
+})
+
+bind1('.promotion-swiper-arrow-left').onclick = () => {
+    swiperPromotion.slidePrev()
+}
+
+
+bind1('.promotion-swiper-arrow-right').onclick = () => {
+    swiperPromotion.slideNext()
+}
 
 // nav animate
 const activeNav = (elementActive, activeLine, indexActive) => {

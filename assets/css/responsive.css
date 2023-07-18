@@ -186,6 +186,35 @@
     .footer-social-list {
         justify-content: center;
     }
+
+    .promotion-tab {
+        padding: 6px 10px 10px;
+    }
+
+    .promotion-tab-item img{
+        margin-right: 0;
+    }
+
+    .promotion-tab-item {
+        height: 35px;
+        width: 15%;
+    }
+
+    .promotion-swiper-wrapper {
+        width: 90% !important;
+    }
+
+    .promotion-swiper-arrow-left {
+        margin-right: 0;
+    }
+
+    .promotion-swiper-arrow-right {
+        margin-left: 0;
+    }
+
+    .swiper-promotion .swiper-slide-active {
+        width: 100% !important;
+    }
 }
 
 
