@@ -644,7 +644,7 @@ section {
 }
 
 .promotion-tab-item {
-    width: 19.5%;
+    width: 16%;
     padding: 10px 20px;
     position: relative;
 }
@@ -769,13 +769,13 @@ section {
 
 .promotion-card-game-item {
     padding-bottom: 20px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.8s ease-in-out;
     transform: translateY(200px);
     cursor: pointer;
 }
 
 .promotion-card-game-item-img {
-    width: 50px !important;
+    width: 40px !important;
     height: 100%;
 }
 

@@ -103,7 +103,7 @@ var swiperPromotion = new Swiper(".swiper-promotion", {
             spaceBetween: 0
         },
         768: {
-            slidesPerView: 5,
+            slidesPerView: 6,
             spaceBetween: 0
         }
     },
