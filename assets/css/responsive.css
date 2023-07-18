@@ -162,6 +162,30 @@
     .footer-logo img {
         width: 60vw;
     }
+
+    .footer-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-partner+.footer-partner{
+        margin-top: 10px;
+    }
+
+    .footer-box+.footer-box{
+        margin-top: 20px;
+    }
+
+    .footer-title{
+        text-align: center;
+    }
+
+    .footer-image-item,
+    .footer-social-list {
+        justify-content: center;
+    }
 }
 
 

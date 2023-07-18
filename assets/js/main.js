@@ -8,11 +8,22 @@ const toggleNavMobile = () => {
 }
 
 bind2('.soft-menu__item').forEach((element) => {
-  element.onclick = () => {
-    toggleNavMobile()
-    bind1('.soft-menu').click()
-  }
+    if(element.id !== 'contact-sub'){
+        element.onclick = (e) => {
+            console.log("chwck")
+            e.preventDefault();
+            e.stopPropagation();
+            toggleNavMobile()
+            bind1('.soft-menu').click()
+        }
+    }
 })
+
+bind1('#contact-sub').onclick = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    bind1('.soft-menu__item-sub-list').classList.toggle('open')
+}
 
 
 // scoll to top
@@ -66,12 +77,14 @@ var swiper = new Swiper(".swiper-l-banner", {
 });
 
 var swiper = new Swiper(".swiper-footer", {
-    slidesPerView: 3,
-    centeredSlides: true,
+    slidesPerView: 6,
+    // Set the index of the active slide to 1
+    activeIndex: 3,
+    // centeredSlides: true,
     spaceBetween: 0,
     // auto
     autoplay: {
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
     },
     loop: true,
@@ -134,4 +147,11 @@ bind2('.show-password').forEach(icon => {
             icon.parentNode.querySelector('input').type = 'password'
         }
     }
+})
+
+// deposit option handler
+bind2('.deposit-option').forEach((option) => {
+    option.addEventListener('click', () => {
+        $('#depositPopUp').modal('hide')
+    })
 })
