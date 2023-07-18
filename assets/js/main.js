@@ -1,6 +1,17 @@
 const bind1 = document.querySelector.bind(document)
 const bind2 = document.querySelectorAll.bind(document)
 
+// utils
+const activeClass = (activeClass, listClass, activeIndex) => {
+    bind2(`.${listClass}`).forEach((item, index) => {
+        if(index === activeIndex){
+            item.classList.add(activeClass)
+        }else {
+            item.classList.remove(activeClass)
+        }
+    })
+}
+
 // mobile nav handler
 const toggleNavMobile = () => {
     bind1('.soft-menu').classList.toggle('open')
@@ -77,14 +88,14 @@ var swiperPromotion = new Swiper(".swiper-promotion", {
     slidesPerView: 1,
     // Set the index of the active slide to 1
     // activeIndex: 3,
-    slideWidth: 200,
+    slideWidth: bind1('.swiper-promotion').offsetWidth*0.15,
     centeredSlides: true,
-    spaceBetween: 0,
+    spaceBetween: 30,
     // auto
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
+    autoplay: false,
+    slideActiveClass: 'swiper-slide-active',
+    slideClass: 'swiper-slide',
+    loopAdditionalSlides: 1,
     breakpoints: {
         // when window width is <= 480px
         480: {
@@ -92,18 +103,24 @@ var swiperPromotion = new Swiper(".swiper-promotion", {
             spaceBetween: 0
         },
         768: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 0
         }
     },
     loop: true,
     loopedSlides: 50,
+    on: {
+        slideChange: function () {
+            resizeThePromotionSwiper()
+        },
+    },
 });
 
-bind2('.swiper-promotion .swiper-slide').forEach((element) => {
+bind2('.swiper-promotion .swiper-slide').forEach((element, index) => {
     element.onclick = () => {
-        console.log(element.dataset.swiperSlideIndex);
-        swiperPromotion.slideTo(parseInt(element.dataset.swiperSlideIndex) - 1)
+        // console.log(element.dataset.swiperSlideIndex);
+        console.log(index)
+        swiperPromotion.slideTo(parseInt(index))
     }
 })
 
@@ -111,10 +128,56 @@ bind1('.promotion-swiper-arrow-left').onclick = () => {
     swiperPromotion.slidePrev()
 }
 
-
 bind1('.promotion-swiper-arrow-right').onclick = () => {
     swiperPromotion.slideNext()
 }
+
+swiperPromotion.on('slideChange', function() {
+  var activeIndex = swiperPromotion.realIndex;
+  console.log("activeIndex", activeIndex)
+  activeClass('active', 'promotion-tab-item', activeIndex)
+});
+
+// tab handler for Promotion Slider
+bind2('.promotion-tab-item').forEach((item, index) => {
+    item.onclick = () => {
+        activeClass('active', 'promotion-tab-item', index)
+        
+        // swiperPromotion.slideTo(parseInt(index))
+        var visibleSlides = swiperPromotion.slidesPerView;
+        var activeIndex = swiperPromotion.realIndex;
+        var slideCount = swiperPromotion.slides.length - 2 * swiperPromotion.loopedSlides;
+
+        var targetIndex = index;
+        while (targetIndex < activeIndex - visibleSlides / 2) {
+            targetIndex += slideCount;
+        }
+        while (targetIndex > activeIndex + visibleSlides / 2) {
+            targetIndex -= slideCount;
+        }
+
+        swiperPromotion.slideTo(targetIndex);
+    }
+})
+
+// resize the swiper
+function resizeThePromotionSwiper() {
+    const totalWidth = bind1('.swiper-promotion').offsetWidth
+    bind2('.swiper-promotion .swiper-slide').forEach((slide, index) => {
+        if(slide.classList.contains('swiper-slide-active')){
+            slide.style.width = `${totalWidth*0.4}px !important`
+        }else{
+            slide.style.width = `${totalWidth*0.15}px !important`
+        }
+
+        // console.log(slide.classList)
+        // console.log(slide.offsetWidth)
+    })
+}
+
+// swiperPromotion.on('init', function() {
+  
+// });
 
 // nav animate
 const activeNav = (elementActive, activeLine, indexActive) => {
