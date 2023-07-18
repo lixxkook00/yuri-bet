@@ -10,9 +10,6 @@ const toggleNavMobile = () => {
 bind2('.soft-menu__item').forEach((element) => {
     if(element.id !== 'contact-sub'){
         element.onclick = (e) => {
-            console.log("chwck")
-            e.preventDefault();
-            e.stopPropagation();
             toggleNavMobile()
             bind1('.soft-menu').click()
         }
@@ -150,8 +147,15 @@ bind2('.show-password').forEach(icon => {
 })
 
 // deposit option handler
-bind2('.deposit-option').forEach((option) => {
-    option.addEventListener('click', () => {
-        $('#depositPopUp').modal('hide')
-    })
+// bind2('.deposit-option').forEach((option) => {
+//     option.addEventListener('click', () => {
+//         $('#depositPopUp').modal('hide')
+//     })
+// })
+
+bind2('.primary-form-header-close').forEach((closebtn) => {
+    closebtn.onclick = () => {
+        console.log(closebtn.parentNode.parentNode.parentNode.parentNode.parentNode)
+        closebtn.parentNode.parentNode.parentNode.parentNode.parentNode.click()
+    }
 })

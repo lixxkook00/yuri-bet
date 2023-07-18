@@ -939,8 +939,74 @@
         </div>
     </div>
 
+    <!-- Deposit -->
+    <div class="modal fade" id="depositPopUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" class="primary-form">
+                    <div class="primary-form-header">
+                        <div class="primary-form-header-name gradient-text text-center">
+                            DEPOSIT
+                        </div>
+
+                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="primary-form-content">
+                        <div class="step d-flex justify-content-start">
+                            <div class="step-text">
+                                <i class="fa-solid fa-caret-right"></i> Select a deposit options :
+                            </div>
+                        </div>
+
+                        <div class="deposit-list mt-3 grid grid-4 grid-m-2">
+                            <div class="deposit-option centering flex-column justify-content-start"
+                                data-bs-toggle="modal" data-bs-target="#depositPopUpQuickPayment">
+                                <div class="deposit-option-icon centering w-100 mb-2">
+                                    <i class="fa-solid fa-money-bill-wheat"></i>
+                                </div>
+                                <div class="deposit-option-name text-center">
+                                    Thanh toán nhanh
+                                </div>
+                            </div>
+                            <div class="deposit-option centering flex-column justify-content-start"
+                                data-bs-toggle="modal" data-bs-target="#depositPopUpBanking">
+                                <div class="deposit-option-icon centering w-100 mb-2">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <div class="deposit-option-name text-center">
+                                    Chuyển khoản ngân hàng
+                                </div>
+                            </div>
+                            <div class="deposit-option centering flex-column justify-content-start"
+                                data-bs-toggle="modal" data-bs-target="#depositPopUpQRCode">
+                                <div class="deposit-option-icon centering w-100 mb-2">
+                                    <i class="fa-solid fa-qrcode"></i>
+                                </div>
+                                <div class="deposit-option-name text-center">
+                                    Quét mã QR
+                                </div>
+                            </div>
+                            <div class="deposit-option centering flex-column justify-content-start"
+                                data-bs-toggle="modal" data-bs-target="#depositPopUpEWallet">
+                                <div class="deposit-option-icon centering w-100 mb-2">
+                                    <i class="fa-solid fa-wallet"></i>
+                                </div>
+                                <div class="deposit-option-name text-center">
+                                    Ví điện tử
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Deposit With Quick Payment-->
-    <div class="modal fade" id="depositPopUpQuickPayment" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="depositPopUpQuickPayment" tabindex="1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -950,7 +1016,7 @@
                             Thanh toán nhanh
                         </div>
 
-                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                        <div class="primary-form-header-close">
                             <i class="fa-solid fa-circle-xmark"></i>
                         </div>
                     </div>
@@ -1062,7 +1128,7 @@
     </div>
 
     <!-- Deposit With Banking-->
-    <div class="modal fade" id="depositPopUpBanking" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="depositPopUpBanking" tabindex="1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -1072,7 +1138,7 @@
                             Chuyển khoản ngân hàng
                         </div>
 
-                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                        <div class="primary-form-header-close">
                             <i class="fa-solid fa-circle-xmark"></i>
                         </div>
                     </div>
@@ -1184,8 +1250,7 @@
     </div>
 
     <!-- Deposit With QR Code-->
-    <div class="modal fade" id="depositPopUpQRCode" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="depositPopUpQRCode" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <form action="" class="primary-form">
@@ -1194,7 +1259,7 @@
                             Quét mã QR
                         </div>
 
-                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                        <div class="primary-form-header-close">
                             <i class="fa-solid fa-circle-xmark"></i>
                         </div>
                     </div>
@@ -1306,7 +1371,7 @@
     </div>
 
     <!-- Deposit With E Wallet-->
-    <div class="modal fade" id="depositPopUpEWallet" tabindex="-1" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="depositPopUpEWallet" tabindex="1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -1316,7 +1381,7 @@
                             Ví điện tử
                         </div>
 
-                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
+                        <div class="primary-form-header-close">
                             <i class="fa-solid fa-circle-xmark"></i>
                         </div>
                     </div>
@@ -1560,70 +1625,6 @@
         </div>
     </div>
 
-    <!-- Deposit -->
-    <div class="modal fade" id="depositPopUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <form action="" class="primary-form">
-                    <div class="primary-form-header">
-                        <div class="primary-form-header-name gradient-text text-center">
-                            DEPOSIT
-                        </div>
-
-                        <div class="primary-form-header-close" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="fa-solid fa-circle-xmark"></i>
-                        </div>
-                    </div>
-
-                    <div class="primary-form-content">
-                        <div class="step d-flex justify-content-start">
-                            <div class="step-text">
-                                <i class="fa-solid fa-caret-right"></i> Select a deposit options :
-                            </div>
-                        </div>
-
-                        <div class="deposit-list mt-3 grid grid-4 grid-m-2">
-                            <div class="deposit-option centering flex-column justify-content-start"
-                                data-bs-toggle="modal" data-bs-target="#depositPopUpQuickPayment">
-                                <div class="deposit-option-icon centering w-100 mb-2">
-                                    <i class="fa-solid fa-money-bill-wheat"></i>
-                                </div>
-                                <div class="deposit-option-name text-center">
-                                    Thanh toán nhanh
-                                </div>
-                            </div>
-                            <div class="deposit-option centering flex-column justify-content-start"
-                                data-bs-toggle="modal" data-bs-target="#depositPopUpBanking">
-                                <div class="deposit-option-icon centering w-100 mb-2">
-                                    <i class="fa-solid fa-building-columns"></i>
-                                </div>
-                                <div class="deposit-option-name text-center">
-                                    Chuyển khoản ngân hàng
-                                </div>
-                            </div>
-                            <div class="deposit-option centering flex-column justify-content-start"
-                                data-bs-toggle="modal" data-bs-target="#depositPopUpQRCode">
-                                <div class="deposit-option-icon centering w-100 mb-2">
-                                    <i class="fa-solid fa-qrcode"></i>
-                                </div>
-                                <div class="deposit-option-name text-center">
-                                    Quét mã QR
-                                </div>
-                            </div>
-                            <div class="deposit-option centering flex-column justify-content-start"
-                                data-bs-toggle="modal" data-bs-target="#depositPopUpEWallet">
-                                <div class="deposit-option-icon centering w-100 mb-2">
-                                    <i class="fa-solid fa-wallet"></i>
-                                </div>
-                                <div class="deposit-option-name text-center">
-                                    Ví điện tử
-                                </div>
-                            </div>
-                        </div>
-                </form>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
